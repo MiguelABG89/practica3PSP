@@ -39,7 +39,7 @@ public class PracticaForkJoinRec {
             l_Tarea1.fork();
             l_Tarea2.fork();
 
-            return l_Medio;
+            return (l_Tarea1.join() + l_Tarea2.join()) / 2;
         }
         private double MediaIter(){
             double l_Media = 0;
